@@ -1,0 +1,67 @@
+.card {
+  padding: var(--space-xl);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base),
+    background-color var(--transition-theme);
+}
+
+.card:hover {
+  border-color: rgba(var(--accent-rgb), 0.2);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-3px);
+}
+
+.name {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  transition: color var(--transition-theme);
+}
+
+.issuer {
+  font-size: var(--text-base);
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 4px;
+  transition: color var(--transition-theme);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-md);
+}
+
+.date {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  transition: color var(--transition-theme);
+}
+
+.verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: opacity var(--transition-fast);
+}
+
+.verify:hover {
+  opacity: 0.8;
+}
+
+.verifyIcon {
+  width: 14px;
+  height: 14px;
+}

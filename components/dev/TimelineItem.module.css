@@ -1,0 +1,112 @@
+.item {
+  display: flex;
+  gap: var(--space-xl);
+  position: relative;
+}
+
+/* Timeline line */
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 24px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: var(--bg-primary);
+  flex-shrink: 0;
+  z-index: 1;
+  transition: border-color var(--transition-theme), background-color var(--transition-theme);
+}
+
+.connector {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--accent), rgba(var(--accent-rgb), 0.1));
+  transition: background var(--transition-theme);
+}
+
+.connectorHidden {
+  visibility: hidden;
+}
+
+/* Content card */
+.card {
+  flex: 1;
+  padding: var(--space-xl);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-xl);
+  transition: border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    background-color var(--transition-theme);
+}
+
+.card:hover {
+  border-color: rgba(var(--accent-rgb), 0.15);
+  box-shadow: var(--shadow-glow);
+}
+
+.role {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  transition: color var(--transition-theme);
+}
+
+.company {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 2px;
+  transition: color var(--transition-theme);
+}
+
+.period {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: var(--space-md);
+  transition: color var(--transition-theme);
+}
+
+.description {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: var(--space-md);
+  transition: color var(--transition-theme);
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  transition: color var(--transition-theme);
+}
+
+.highlightDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 8px;
+  flex-shrink: 0;
+  transition: background-color var(--transition-theme);
+}

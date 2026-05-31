@@ -1,0 +1,56 @@
+.header {
+  margin-bottom: var(--space-2xl);
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+  transition: color var(--transition-theme);
+}
+
+.labelDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: background-color var(--transition-theme);
+}
+
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text-primary);
+  transition: color var(--transition-theme);
+}
+
+[data-profile="writing"] .title {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin-top: var(--space-sm);
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+  transition: color var(--transition-theme);
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+  border-radius: var(--radius-full);
+  margin-top: var(--space-lg);
+  transition: background var(--transition-theme);
+}
