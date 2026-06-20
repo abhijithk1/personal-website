@@ -7,14 +7,14 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    name: 'AWS Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    date: '2024',
+    name: 'AWS Certified Cloud Practitioner',
+    issuer: 'Amazon Web Services (AWS)',
+    date: '2023',
     verifyUrl: '#',
   },
   {
-    name: 'JavaScript Algorithms and Data Structures',
-    issuer: 'freeCodeCamp',
+    name: 'IBM Developer Profession Certification — Level 1 Foundational',
+    issuer: 'IBM',
     date: '2023',
     verifyUrl: '#',
   },

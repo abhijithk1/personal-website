@@ -2,11 +2,12 @@ import type { Metadata } from 'next';
 import SectionHeader from '@/components/shared/SectionHeader';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import TimelineItem from '@/components/dev/TimelineItem';
-import { experiences } from '@/data/experience';
+import EducationItem from '@/components/dev/EducationItem';
+import { experiences, education } from '@/data/experience';
 
 export const metadata: Metadata = {
   title: 'Experience',
-  description: 'Professional work experience and career journey of Abhijith K.',
+  description: 'Professional work experience and academic background of Abhijith K.',
 };
 
 export default function ExperiencePage() {
@@ -31,6 +32,27 @@ export default function ExperiencePage() {
                 />
               </ScrollReveal>
             ))}
+          </div>
+
+          <div style={{ marginTop: 'var(--space-3xl)' }}>
+            <ScrollReveal>
+              <SectionHeader
+                label="Academic Background"
+                title="Education"
+                subtitle="The foundation that shaped my technical thinking."
+              />
+            </ScrollReveal>
+
+            <div style={{ maxWidth: '700px' }}>
+              {education.map((edu, i) => (
+                <ScrollReveal key={`${edu.institution}-${edu.degree}`} delay={i * 100}>
+                  <EducationItem
+                    education={edu}
+                    isLast={i === education.length - 1}
+                  />
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

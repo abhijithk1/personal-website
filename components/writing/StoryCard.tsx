@@ -5,8 +5,16 @@ import styles from './StoryCard.module.css';
 export default function StoryCard({ story }: { story: Story }) {
   return (
     <div className={styles.card}>
-      <span className={styles.genre}>{story.genre}</span>
+      <div className={styles.meta}>
+        <span className={styles.genre}>{story.genre}</span>
+        {story.platform && (
+          <span className={styles.platform}>{story.platform}</span>
+        )}
+      </div>
       <h3 className={styles.title}>{story.title}</h3>
+      {story.penName && (
+        <p className={styles.penName}>Written as <em>{story.penName}</em></p>
+      )}
       <p className={styles.excerpt}>{story.excerpt}</p>
       {story.readUrl && (
         <a
