@@ -5,8 +5,12 @@ import CertCard from '@/components/dev/CertCard';
 import { certifications } from '@/data/certifications';
 
 export const metadata: Metadata = {
-  title: 'Certifications',
-  description: 'Professional certifications and credentials earned by Abhijith K.',
+  title: 'Certifications — AWS Certified Cloud Practitioner',
+  description:
+    'Professional certifications of Abhijith K — AWS Certified Cloud Practitioner and IBM Developer Profession Certification. Validated expertise in cloud computing, software development, and enterprise-grade engineering.',
+  alternates: {
+    canonical: 'https://abhijithk.dev/dev/certifications',
+  },
 };
 
 export default function CertificationsPage() {

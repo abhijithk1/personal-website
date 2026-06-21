@@ -6,8 +6,12 @@ import StoryCard from '@/components/writing/StoryCard';
 import { stories } from '@/data/stories';
 
 export const metadata: Metadata = {
-  title: 'Stories',
-  description: 'Stories, novels, and creative writing by Abhijith K.',
+  title: 'Stories & Novels',
+  description:
+    'Creative fiction by Abhijith K — short stories, novels, and literary explorations published on Wattpad under the pen name Aaron Kbot. Genres include science fiction, romance, social drama, and meta-fiction.',
+  alternates: {
+    canonical: 'https://abhijithk.dev/writing/stories',
+  },
 };
 
 export default function StoriesPage() {

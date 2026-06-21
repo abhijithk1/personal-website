@@ -6,8 +6,12 @@ import EducationItem from '@/components/dev/EducationItem';
 import { experiences, education } from '@/data/experience';
 
 export const metadata: Metadata = {
-  title: 'Experience',
-  description: 'Professional work experience and academic background of Abhijith K.',
+  title: 'Work Experience — 4+ Years at IBM',
+  description:
+    'Professional experience of Abhijith K — 4+ years as a Software Developer at IBM building high-performance Go backend services, Kubernetes orchestration, CI/CD pipelines, AI agentic tools, and React frontends. B.Tech (Honours) from NSS College of Engineering (CGPA 9.1/10).',
+  alternates: {
+    canonical: 'https://abhijithk.dev/dev/experience',
+  },
 };
 
 export default function ExperiencePage() {

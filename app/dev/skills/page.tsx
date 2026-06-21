@@ -5,8 +5,12 @@ import SkillCard from '@/components/dev/SkillCard';
 import { skills, skillCategories } from '@/data/skills';
 
 export const metadata: Metadata = {
-  title: 'Skills',
-  description: 'Technical skills, programming languages, frameworks, and tools that Abhijith K works with.',
+  title: 'Technical Skills — Go, Python, React, Kubernetes, AI Agents',
+  description:
+    'Technical skills of Abhijith K — proficient in Go (Golang), Python, JavaScript, TypeScript, React, Next.js, Kubernetes, Docker, AWS, CI/CD, Jenkins, ArgoCD, AI Agents, MCP (Model Context Protocol), LLMs, and RAG. Full stack developer with cloud-native expertise.',
+  alternates: {
+    canonical: 'https://abhijithk.dev/dev/skills',
+  },
 };
 
 export default function SkillsPage() {

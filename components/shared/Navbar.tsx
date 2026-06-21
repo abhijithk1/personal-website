@@ -13,6 +13,7 @@ const devLinks = [
   { href: '/dev/projects', label: 'Projects' },
   { href: '/dev/experience', label: 'Experience' },
   { href: '/dev/certifications', label: 'Certifications' },
+  { href: '/resume', label: 'Resume' },
   { href: '/contact', label: 'Contact' },
 ];
 

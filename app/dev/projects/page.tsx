@@ -5,8 +5,12 @@ import ProjectCard from '@/components/dev/ProjectCard';
 import { projects } from '@/data/projects';
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Software projects, open source contributions, and side projects by Abhijith K.',
+  title: 'Projects — AI Agents, MCP Gateway, Cloud-Native Apps',
+  description:
+    'Software projects by Abhijith K — including AI Agent systems with MCP Gateway, SRE Incident Dashboards, React Native apps, Go REST API generators, and cloud-native full-stack applications. Open source portfolio showcasing production-grade engineering.',
+  alternates: {
+    canonical: 'https://abhijithk.dev/dev/projects',
+  },
 };
 
 export default function ProjectsPage() {
